@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./javascript.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Your notes</h1>
+        <form id="stickerBoardForm">
+            <input type="text" id="inputNotes">
+            <input type="hidden" id="id">
+            <button class="saveButton">Save</button>
+        </form>
+        <button id="clearAllButton">Clear All</button>
+    </div>
+    <div class="stickerBoardWrapper">
+        <div id="stickerBoard" class="stickerBoard"></div>
+    </div>
+
+    <template id="stickerTemplate">
+        <div data-id="{{id}}" class="sticker {{color}}">
+            <p>{{titile}}</p>
+            <div class="delEdit">
+                <span class='edit'>Edit</span>
+                <span class='delete'>X</span>
+            </div>
+        </div>
+    </template>
+</body>
+</html>
