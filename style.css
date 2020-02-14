@@ -72,17 +72,25 @@ button:hover {
 }
 
 .sticker {
+    position: relative;
     height: 270px;
     width: 270px;
+    box-shadow:0px 3px 7px 0px rgba(0,0,0,0.3); 
     padding: 45px 20px 20px;
     background-color: #7CC691;
     margin: 15px 10px;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     font-weight: 900;
     position: relative;
     transition: all .3s;
+}
+
+.sticker p {
+    font-family: 'Caveat', cursive;
+    font-size: 26px;
+    text-align: center;
+    color: black;
 }
 
 .sticker:hover .delEdit{
@@ -157,11 +165,6 @@ button:hover {
 .edit:hover:after, .delete:hover:after {
     width: 100%;
 }
-
-
-/* .edit:hover, .delete:hover {
-    
-} */
 
 p {
     max-width: 240px;
