@@ -90,6 +90,8 @@ function createNewNoteItem(noteData) {
 
 function setData(noteData) {
     const color = getColor();
+    noteData.rotate = (Math.random() * (0.4 - (-0.4)) + (-0.4))*10;
+    console.log(noteData.rotate)
     noteData.color = color;
     noteData.id = Date.now();
     noteData.title = inputNotes.value;
@@ -119,6 +121,8 @@ function stickerBoardtoHTML(data) {
         .replace('{{id}}', data.id)
         .replace('{{titile}}', data.title)
         .replace('{{color}}', data.color)
+        .replace('{{rotate}}', data.rotate) 
+        // не уверен на счет того, насколько правильно делать это через инлайновые стили, но мне очень захотелось)
 };
 
 function clear() {
