@@ -16,7 +16,6 @@ body {
     position: sticky;
     top: 0; 
     height: 100vh;
-    position: relative;
 }
 
 .header h1 {
@@ -70,6 +69,7 @@ button:hover {
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
+    padding: 10px 0;
 }
 
 .sticker {
